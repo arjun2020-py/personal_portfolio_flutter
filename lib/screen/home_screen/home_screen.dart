@@ -69,29 +69,33 @@ class HomeScreen extends StatelessWidget {
                     PopupMenuItem(child: Text(LocalName.certificates.tr))
                   ]),
         ),
-        body: Column(
+        body: ListView(
           children: [
-            SizedBox(
-              height: 20,
-            ),
-            Center(
-              child: CircleAvatar(
-                radius: 100,
-                backgroundImage: AssetImage(
-                  'images/assets/profile.png',
+            Column(
+              children: [
+                SizedBox(
+                  height: 20,
                 ),
-              ),
+                Center(
+                  child: CircleAvatar(
+                    radius: 100,
+                    backgroundImage: AssetImage(
+                      'images/assets/profile.png',
+                    ),
+                  ),
+                ),
+                CustomTextWidget(
+                  color: Colors.white,
+                  text: LocalName.name.tr,
+                  fontSize: 30,
+                ),
+                CustomTextWidget(
+                    color: Colors.white,
+                    fontSize: 20,
+                    text: LocalName.flutterDeveloper.tr),
+                SkillSetWidget()
+              ],
             ),
-            CustomTextWidget(
-              color: Colors.white,
-              text: LocalName.name.tr,
-              fontSize: 30,
-            ),
-            CustomTextWidget(
-                color: Colors.white,
-                fontSize: 20,
-                text: LocalName.flutterDeveloper.tr),
-            SkillSetWidget()
           ],
         ),
       ),
