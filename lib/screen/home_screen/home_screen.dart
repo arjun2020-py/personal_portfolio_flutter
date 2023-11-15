@@ -4,6 +4,7 @@ import 'package:portfolio/interlization/interlization.dart';
 
 import '../../helper/custom_widgets/custom_text_widget.dart';
 import '../../utils/router.dart';
+import '../certificate_screen/screen.dart';
 import 'compents/skills_sets_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -42,6 +43,19 @@ class HomeScreen extends StatelessWidget {
                       value: 1,
                     ),
                     PopupMenuItem(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Text(
+                          LocalName.certificates.tr,
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      onTap: () {
+                        Get.to(CertificateScreen());
+                      },
+                      value: 2,
+                    ),
+                    PopupMenuItem(
                       child: TextButton(
                           child: Text(
                             LocalName.aboutMe.tr,
@@ -50,10 +64,10 @@ class HomeScreen extends StatelessWidget {
                           onPressed: () {
                             Get.toNamed(PageRouter().about);
                           }),
-                      value: 2,
-                    )
+                      value: 3,
+                    ),
+                    PopupMenuItem(child: Text(LocalName.certificates.tr))
                   ]),
-         
         ),
         body: Column(
           children: [

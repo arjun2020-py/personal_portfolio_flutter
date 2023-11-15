@@ -32,7 +32,8 @@ class ProjectScreen extends StatelessWidget {
             child: SizedBox(
               width: 300,
               height: 200,
-              child: Card(
+              child:
+               Card(
                 color: Color(0xff252525),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,

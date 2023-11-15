@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:portfolio/helper/custom_widgets/custom_text_widget.dart';
 import 'package:portfolio/interlization/interlization.dart';
 
+import 'comopents/interests_card.dart';
+
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
 
@@ -35,6 +37,9 @@ class AboutScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
             CustomTextWidget(
                 fontSize: 20, text: 'Hello I am', color: Colors.white),
             CustomTextWidget(
@@ -43,7 +48,67 @@ class AboutScreen extends StatelessWidget {
                 fontSize: 18,
                 text: LocalName.flutterDeveloper.tr,
                 color: Colors.white),
-            ElevatedButton(onPressed: () {}, child: Text('Hire Me')),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CustomTextWidget(
+                  fontSize: 12, text: LocalName.decrption, color: Colors.white),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            CustomTextWidget(
+                fontSize: 18,
+                text: LocalName.languages.tr,
+                color: Colors.white),
+            Row(
+              children: [
+                SizedBox(
+                  width: 80,
+                ),
+                CustomTextWidget(
+                    fontSize: 15, text: 'Malaylam', color: Colors.white),
+                Spacer(),
+                CustomTextWidget(
+                    fontSize: 15, text: 'English', color: Colors.white),
+                SizedBox(
+                  width: 80,
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            CustomTextWidget(
+                fontSize: 18,
+                text: LocalName.interests.tr,
+                color: Colors.white),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                interestsCardWidget(
+                  text: LocalName.cricket.tr,
+                ),
+                interestsCardWidget(text: LocalName.watchingMovie.tr),
+                interestsCardWidget(text: LocalName.youTube.tr)
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                LocalName.hireMe.tr,
+                style: TextStyle(color: Colors.white),
+              ),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            ),
+            SizedBox(
+              height: 10,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -66,7 +131,7 @@ class AboutScreen extends StatelessWidget {
                       color: Colors.white,
                     ))
               ],
-            )
+            ),
           ],
         ),
       ),

@@ -24,7 +24,16 @@ class Internationalization extends Translations {
           LocalName.firebase: "Firebase",
           LocalName.sQLite: "SQLite",
           LocalName.porjects: "Projects",
-          LocalName.aboutMe : "About Me"
+          LocalName.aboutMe: "About Me",
+          LocalName.certificates: "Certificates",
+          LocalName.languages: "Languages",
+          LocalName.interests: "Interests",
+          LocalName.malayalam: "Malayalam",
+          LocalName.english: 'English',
+          LocalName.cricket: "Crikcet",
+          LocalName.watchingMovie: 'Movie',
+          LocalName.youTube: "YouTube",
+          LocalName.hireMe: "Hire Me"
         }
       };
 }
@@ -51,4 +60,19 @@ class LocalName {
   static String sQLite = 'sQLite';
   static String porjects = 'projects';
   static String aboutMe = 'about_me';
+  static String certificates = 'certificates';
+  static String decrption =
+      'A bachelor\'s degree in Software Engineering has enhanced my profificiency in developing mobile applications and looking forward to work in a competitive environment that enhances overall learning.';
+  static String languages = 'languages';
+  static String interests = 'interests';
+  static String malayalam = 'malayalam';
+  static String english = 'english';
+  static String cricket = 'cricket';
+  static String watchingMovie = 'watchingMovie';
+  static String youTube = 'youTube';
+  static String hireMe = 'hireMe';
+  static String iosCertficate =
+      'for participating in the "130 hours iOS App Development" organized by "Consolidated Techware Private Limited"';
+  static String flutterCertficate =
+      'For participating in CS International Certified-Mobile app developer';
 }
