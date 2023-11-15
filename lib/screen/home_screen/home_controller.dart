@@ -19,7 +19,7 @@ class HomeController extends GetxController {
     SkillSet(LocalName.mvc, CustomImages().mvc),
     SkillSet(LocalName.xcode.tr, CustomImages().xcode),
     SkillSet(LocalName.iOS.tr, CustomImages().ios),
-    SkillSet(LocalName.c_programming.tr, CustomImages().c),
+    SkillSet(LocalName.cProgramming.tr, CustomImages().c),
     SkillSet(LocalName.html.tr, CustomImages().html),
     SkillSet(LocalName.css.tr, CustomImages().css),
     SkillSet(LocalName.javascript.tr, CustomImages().javascript),
